@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Портфолио студента: о себе, навыки, проекты, контакты" />
+  <title>Портфолио | Грфчев Ярослав</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo">Ярослав<span>.dev</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Открыть меню">
+        <span></span>
+      </label>
+            <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">О себе</a></li>
+          <li><a href="#skills" class="nav__link">Навыки</a></li>
+          <li><a href="#portfolio" class="nav__link">Работы</a></li>
+          <li><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO / ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__text">
+          <h1 class="section__title">Привет, я Ярослав 👋</h1>
+          <p class="about__lead">
+            Студент 3 курса направления «Фундументальная информатика и информационные технологии».
+          </p>
+          <p>
+            ##За последний год реализовал несколько учебных и личных проектов:
+            от Telegram-бота до SPA на React. Активно участвую в хакатонах
+            и открытых олимпиадах по программированию.
+          </p>
+	            <ul class="about__achievements">
+            <li>##🏆 Призёр внутривузовской олимпиады по программированию (2024)</li>
+            <li>##📚 Средний балл за сессию — 4.8</li>
+            <li>##🚀 Участник хакатона «Цифровой прорыв»</li>
+          </ul>
+
+          <a href="#contacts" class="btn btn--primary">Связаться со мной</a>
+        </div>
+
+        <div class="about__photo">
+          <img src="images/avatar.jpg" alt="Фото Ивана Иванова" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section__title">Навыки</h2>
+        <p class="section__subtitle">Технологии, с которыми работаю уверенно</p>
+
+        <div class="skills__grid">
+          <article class="skill-card">
+            <h3>HTML / CSS</h3>
+            <div class="progress"><div class="progress__bar" style="--value: 90%"></div></div>
+            <span class="skill-card__level">90%</span>
+          </article>
+	            <article class="skill-card">
+            <h3>JavaScript</h3>
+            <div class="progress"><div class="progress__bar" style="--value: 80%"></div></div>
+            <span class="skill-card__level">80%</span>
+          </article>
+
+          <article class="skill-card">
+            <h3>React</h3>
+            <div class="progress"><div class="progress__bar" style="--value: 70%"></div></div>
+            <span class="skill-card__level">70%</span>
+          </article>
+
+          <article class="skill-card">
+            <h3>Python</h3>
+            <div class="progress"><div class="progress__bar" style="--value: 75%"></div></div>
+            <span class="skill-card__level">75%</span>
+          </article>
+
+          <article class="skill-card">
+            <h3>Git / GitHub</h3>
+            <div class="progress"><div class="progress__bar" style="--value: 85%"></div></div>
+            <span class="skill-card__level">85%</span>
+          </article>
+	            <article class="skill-card">
+            <h3>SQL</h3>
+            <div class="progress"><div class="progress__bar" style="--value: 65%"></div></div>
+            <span class="skill-card__level">65%</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section__title">Примеры работ</h2>
+        <p class="section__subtitle">Учебные и личные проекты</p>
+
+        <div class="portfolio__grid">
+          <article class="project-card">
+            <img src="images/project-1.jpg" alt="Скриншот проекта Telegram-бот" />
+            <div class="project-card__body">
+              <h3>##Telegram-бот для расписания</h3>
+              <p>##Бот на Python, который присылает расписание пар и напоминания.</p>
+              <ul class="project-card__tags">
+                <li>Python</li><li>aiogram</li><li>SQLite</li>
+              </ul>
+            </div>
+          </article>
+
+	  <article class="project-card">
+            <img src="images/project-2.jpg" alt="Скриншот проекта SPA-магазин" />
+            <div class="project-card__body">
+              <h3>##SPA «Мини-магазин»</h3>
+              <p>##Одностраничное приложение с корзиной, фильтрами и роутингом.</p>
+              <ul class="project-card__tags">
+                <li>React</li><li>Vite</li><li>CSS Modules</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/project-3.jpg" alt="Скриншот лабораторной работы" />
+            <div class="project-card__body">
+              <h3>##Лаба: алгоритмы сортировки</h3>
+              <p>##Визуализация quicksort, mergesort и heapsort на Canvas.</p>
+              <ul class="project-card__tags">
+                <li>JavaScript</li><li>Canvas</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTS ============ -->
+    <section class="section contacts" id="contacts">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        <p class="section__subtitle">Открыт к стажировкам и коллаборациям</p>
+
+        <ul class="contacts__list">
+          <li>
+            <span class="contacts__label">Email:</span>
+            <a href="mailto:ivan.ivanov@example.com">##ivan.ivanov@example.com</a>
+          </li>
+          <li>
+            <span class="contacts__label">Телефон:</span>
+            <a href="tel:+79990000000">##+7 (999) 000-00-00</a>
+          </li>
+          <li>
+            <span class="contacts__label">GitHub:</span>
+            <a href="https://github.com/username" target="_blank" rel="noopener">##github.com/username</a>
+          </li>
+          <li>
+            <span class="contacts__label">Telegram:</span>
+            <a href="https://t.me/username" target="_blank" rel="noopener">@username</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+      </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Грачев Ярослав. Все права защищены.</p>
+      <ul class="footer__links">
+        <li><a href="#about">О себе</a></li>
+        <li><a href="#portfolio">Работы</a></li>
+        <li><a href="#top">Наверх ↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
